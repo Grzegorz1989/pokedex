@@ -15,7 +15,7 @@ class PokemonsList extends React.Component{
         this.setState({
             loading : true
         });
-        fetch('http://pokeapi.co/api/v2/pokemon?limit=10').then(res=>res.json())
+        fetch('http://pokeapi.co/api/v2/pokemon?limit=800').then(res=>res.json())
             .then(response=>{
                 this.setState({
                     species : response.results,
